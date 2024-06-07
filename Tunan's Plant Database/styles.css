@@ -1,0 +1,222 @@
+.homeimg{
+    width: 100%;
+    opacity: 0.5;
+    forced-color-adjust: #3D2B2B;
+    padding:0;
+    margin:0;
+    position: fixed;
+    display:flex;
+    flex-direction: row;
+    flex: 1;
+    position: absolute;
+    background-color: #3D2B2B;
+    fill-opacity: inherit;
+    shape-image-threshold:initial;
+    
+}
+body {
+    /* height: 10px; */
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box;
+    align-items: center;
+    overflow:hidden; */
+    background-color: #f4f4f4;
+    font-family:"C:\Users\Hp\Downloads\Merriweather\Merriweather-LightItalic.ttf";
+}
+
+header {
+    background-color: #4A8A78;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height:80px;;
+    padding: 1em;
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    font-family:"C:\Users\Hp\Downloads\Merriweather\Merriweather-LightItalic.ttf";
+
+    z-index:100;
+
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+.main-content {
+    text-align:left;
+    padding-top: 80px;
+}
+
+
+.login-form{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #3D2B2B;
+    padding-bottom: 300px;
+    padding-top: 200px;
+
+}
+
+.signup-form {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #3D2B2B;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #4A8A78;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4A8A78;
+}
+
+footer {
+    background-color: #4A8A78;
+    color: #ffffff;
+    text-align:left;
+    padding: 10px;
+    padding-right: 2px;
+    padding-left: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;;
+    font-size: 20px;
+    
+    display:flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.text{
+    color: #ffffff;
+    font-size: 20px;
+}
+.pgf{
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+h2 {
+    color: #ffffff;
+    font-size: 35px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4A8A78;
+    color: white;
+}
+
+.delete-form {
+    display: inline-block;
+}
+
+.delete-button {
+    background-color: #FF5252;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.logout {
+    float: right;
+    margin-top: -30px;
+}
+.plant_add-form {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+    line-height: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #3D2B2B;
+    padding:40px;
+
+}
+

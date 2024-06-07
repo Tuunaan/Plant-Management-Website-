@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Transaction - The Plant Paradise</title>
+</head>
+<body>
+    <header>
+        <div style="
+        display:flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        ">
+            <div style="padding-left: 10px;"><h1>Transaction Form</h1></div>
+            <div class="text">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div> 
+    </header>
+
+    <section class="Transaction-Form">
+        <h2>Make new transactions</h2>
+        <form action="transaction.php" method="post">
+            <div>
+                <label for="buyerid">BuyerID:</label>
+                <input type="int" id="buyerid" name="buyerid" required>
+            </div>
+            
+
+            <div>
+                <label for="sellerid">SellerID:</label>
+                <input type="int" id="sellerid" name="sellerid" required>
+            </div>
+            
+            <div>
+                <label for="plantid">PlantID:</label>
+                <input type="int" id="plantid" name="plantid" required>
+            </div>
+
+            <div>
+                <label for="transaction_type">Transaction Type:</label>
+                <input type="varchar" id="transaction_type" name="transaction_type" required>
+            </div>
+
+            <div>
+                <label for="transaction_date_time">Date & Time:</label>
+                <input type="datetime" id="transaction_date_time" name="transaction_date_time" required>
+            </div>
+            <div>
+                <label for="payment_method">Method of Payment:</label>
+                <input type="varchar" id="payment_method" name="payment_method" required>
+            </div>
+
+            <div>
+                <button type="submit">Transact</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div><p>The Plant Paradise</p></div>
+        <div style="align-items: center;"><img style="width:30px; padding: 20px;"; src="PP.png"></div>
+    </footer>
+</body>
+</html>

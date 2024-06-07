@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indoor Plant Care Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .title {
+            color: #27ae60;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .plant-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+        }
+        .plant-box h3 {
+            color: #27ae60;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .plant-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .plant-box ul li {
+            background: #ecf0f1;
+            margin-bottom: 5px;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        .plant-box p {
+            font-size: 0.9em;
+            line-height: 1.4em;
+            color: #666;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Indoor Plants Care Schedule</h1>
+
+    <div class="grid-container">
+        <!-- Foliage Plants -->
+        <div class="plant-box">
+            <h3>Foliage Plants</h3>
+            <p class="highlight">Examples: Spider Plant, Snake Plant, Peace Lily, Boston Fern</p>
+            <p><span class="highlight">Care Instructions:</span> Place in a sunny room for indirect, natural light. Water frequently to maintain damp soil. Keep at room temperature, avoiding extreme heat and cold.</p>
+        </div>
+
+        <!-- Flowering Indoor Plants -->
+        <div class="plant-box">
+            <h3>Flowering Indoor Plants</h3>
+            <p class="highlight">Examples: Orchids, African Violets, Anthurium, Christmas Cactus</p>
+            <p><span class="highlight">Care Instructions:</span> Remove decorative sleeves, faded flowers, and yellowing leaves. Snip off dead foliage at the base of the leaf stem.</p>
+        </div>
+
+        <!-- Succulents and Cactus-->
+        <div class="plant-box">
+            <h3>Succulents and Cactus</h3>
+            <p class="highlight">Examples: Aloe Vera, Jade Plant, Echeveria, Christmas Cactus</p>
+            <p><span class="highlight">Care Instructions:</span> Water at least once a week with a good soak, allowing excess water to drain. Allow the compost to dry slightly between waterings.</p>
+        </div>
+
+        <!-- Herbs (Indoor) -->
+        <div class="plant-box">
+            <h3>Herbs (Indoor)</h3>
+            <p class="highlight">Examples: Basil, Mint, Rosemary, Parsley</p>
+            <p><span class="highlight">Care Instructions:</span> Most herbs need six hours of direct sunlight and a temperature of 65 to 70°F day and 55 to 60°F night. Balance humidity with adequate air circulation.</p>
+        </div>
+    </div>
+
+</body>
+</html>

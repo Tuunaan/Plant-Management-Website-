@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up - The Plant Paradise</title>
+</head>
+<body>
+    <header>
+        <div style="
+        display:flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        ">
+            <div style="padding-left: 20px;"><h1>The Plant Paradise</h1></div>
+            <div class="text">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div> 
+    </header>
+
+    <section class="signup-form">
+        <h2>Create a new account</h2>
+        <form action="signup.php" method="post">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="phone_number">Phone Number:</label>
+                <input type="text" id="phone_number" name="phone_number" required>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+    </section>
+
+    <footer>
+        <div><p>The Plant Paradise</p></div>
+        <div style="align-items: center;"><img style="width:30px; padding: 20px;"; src="PP.png"></div>
+    </footer>
+</body>
+</html>
+
+
+
+
+ 

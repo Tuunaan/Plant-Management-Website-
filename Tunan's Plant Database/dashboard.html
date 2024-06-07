@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color:#4A8A78;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .logout {
+            float: right;
+            margin-top: -30px;
+        }
+        .plant_add-form {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            color: white;
+            line-height: 40px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #3D2B2B;
+            padding:40px;
+
+        }
+        button {
+            background-color: #4A8A78;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="dashboard.php" method ="post">
+        <header>
+            <h1>User Dashboard</h1>
+            <div>
+                <nav>
+                    <ul>
+                        <li class="text"><a href="home.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+        <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
+        </div>
+    </form>
+    <div class="container">
+    <div class="plant_add-form ">
+    <form action="process_plant_input.php" method="post">
+        <div>
+            <label for="name">Plant Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="species">Plant Species:</label>
+            <input type="text" id="species" name="species" required>
+        </div>
+        <div>
+            <label for="category">Plant Category:</label>
+            <input type="text" id="category" name="category" required>
+        </div>
+        <div>
+            <label for="age">Plant Age(yr):</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div>
+            <label for="On_Sale">On Sale:</label>
+            <select id="On_Sale" name="On_Sale" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div>
+            <label for="description">Short Description:</label>
+            <textarea id="description" name="description" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Add Plant(s)">
+        </div>
+        <div>
+            <!-- <input type="submit" value="Add Plant(s)"> -->
+            <button type="submit">Add Plant(s)</button>
+        </div>
+    </form>
+    </div>
+        <hr>
+        <a href="view_user_plants.php">My Plants</a>
+    </div>
+        <div class="container">
+                <form action="plant_database.php" method="post">
+                    <button type="submit">Plant Database</button>
+                </form>
+        </div>
+        <div class="container">
+                <form action="careschedule.php" method="post">
+                    <div><button type="submit">Plant Care</button></div>
+                </form>
+        </div>
+        <div class="container">
+                <form action="shop.php" method="post">
+                    <button type="submit">Shop Plants</button></div>
+                </form>
+        </div>
+        <div class="container">
+            <form action="event.php" method="post">
+                <button type="submit">Plant Events</button></div>
+            </form>
+    </div>
+ 
+</body>
+</html>
